@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Gatsby Starter Blog RSS Feed]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Mar 2023 07:41:23 GMT</lastBuildDate><item><title><![CDATA[Scala言語のOption型の本質と使い方]]></title><description><![CDATA[Option型のポイント Option型の本質 プログラミング中でOption型に遭遇した場合は、次の2つの解釈ができます。1つ目は、ある値が存在するかどうかを表現したものです。これは単純に、値が存在する場合はSomeとなり、値が存在しない場合はNoneとなります。…]]></description><link>null/Scala言語のOption型の本質と使い方/</link><guid isPermaLink="false">null/Scala言語のOption型の本質と使い方/</guid><pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Option型のポイント&lt;/h2&gt;
-&lt;h3&gt;Option型の本質&lt;/h3&gt;
-&lt;p&gt;プログラミング中でOption型に遭遇した場合は、次の2つの解釈ができます。1つ目は、ある値が存在するかどうかを表現したものです。これは単純に、値が存在する場合はSomeとなり、値が存在しない場合はNoneとなります。2つ目は、例外ハンドリング結果を表現したものです。正常に実行できた場合はSomeとなり、プログラムの実行中に意図した例外が発生した場合にNoneとなります。&lt;/p&gt;
-&lt;h3&gt;単一のOption型の値に対して処理をしたいとき&lt;/h3&gt;
-&lt;p&gt;初心者がやりがちなのは、Option型の値を取り出そうとすることですが、これは誤った発想です。代わりに、Option型の値を変換する発想が必要です。Option型の値を変換するには、mapコンビネーターを使用することで実現できます。また、他にもOption型から値を取り出さずに処理を行うコンビネーターが提供されていますので、こちらを使用することをおすすめします。ただし最終的にはどこかのタイミングでOption型から値を取り出す必要がありますが、可能な限りそのタイミングは遅らせるべきです。&lt;/p&gt;
-&lt;h3&gt;複数のOption型の値に対して処理をしたいとき&lt;/h3&gt;
-&lt;p&gt;初心者が陥りやすいのは、2つのOption型に対して処理をした結果、戻りの型が &lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; のようにネストしてしまうことです。しかし、このネストしたものが表現するパターンは、以下のとおりです。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[Gatsby Starter Blog RSS Feed]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Mar 2023 10:47:41 GMT</lastBuildDate><item><title><![CDATA[Scala言語のOption型の本質と使い方]]></title><description><![CDATA[Option 型のポイント Option 型の本質 プログラミング中で Option 型に遭遇した場合は、次の 2 つの解釈ができます。1 つ目は、ある値が存在するかどうかを表現したものです。これは単純に、値が存在する場合は Some となり、値が存在しない場合は None…]]></description><link>null/Scala言語のOption型の本質と使い方/</link><guid isPermaLink="false">null/Scala言語のOption型の本質と使い方/</guid><pubDate>Sun, 20 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Option 型のポイント&lt;/h2&gt;
+&lt;h3&gt;Option 型の本質&lt;/h3&gt;
+&lt;p&gt;プログラミング中で Option 型に遭遇した場合は、次の 2 つの解釈ができます。1 つ目は、ある値が存在するかどうかを表現したものです。これは単純に、値が存在する場合は Some となり、値が存在しない場合は None となります。2 つ目は、例外ハンドリング結果を表現したものです。正常に実行できた場合は Some となり、プログラムの実行中に意図した例外が発生した場合に None となります。&lt;/p&gt;
+&lt;h3&gt;単一の Option 型の値に対して処理をしたいとき&lt;/h3&gt;
+&lt;p&gt;初心者がやりがちなのは、Option 型の値を取り出そうとすることですが、これは誤った発想です。代わりに、Option 型の値を変換する発想が必要です。Option 型の値を変換するには、map コンビネーターを使用することで実現できます。また、他にも Option 型から値を取り出さずに処理を行うコンビネーターが提供されていますので、こちらを使用することをおすすめします。ただし最終的にはどこかのタイミングで Option 型から値を取り出す必要がありますが、可能な限りそのタイミングは遅らせるべきです。&lt;/p&gt;
+&lt;h3&gt;複数の Option 型の値に対して処理をしたいとき&lt;/h3&gt;
+&lt;p&gt;初心者が陥りやすいのは、2 つの Option 型に対して処理をした結果、戻りの型が &lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; のようにネストしてしまうことです。しかし、このネストしたものが表現するパターンは、以下のとおりです。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&quot;center&quot;&gt;外側のOption&lt;/th&gt;
-&lt;th align=&quot;center&quot;&gt;内側のOption&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;外側の Option&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;内側の Option&lt;/th&gt;
 &lt;th align=&quot;center&quot;&gt;実質的に値があるかどうか&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -36,7 +36,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;また、Option型には別の解釈方法もあり、最大要素数が1のコレクションとして捉えることができます。この場合、&lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt;の全体の要素数は以下のとおりです。&lt;/p&gt;
+&lt;p&gt;また、Option 型には別の解釈方法もあり、最大要素数が 1 のコレクションとして捉えることができます。この場合、&lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt;の全体の要素数は以下のとおりです。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -68,12 +68,12 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;つまり、実質的にはSomeかNoneの2通りしかありませんので、&lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; を &lt;code class=&quot;language-text&quot;&gt;Option[T]&lt;/code&gt; と平坦化することが望ましいです。この平坦化を実現するには、flatMapコンビネーターを使用することで簡単に実現できます。&lt;/p&gt;
-&lt;p&gt;実務的には、まずはmapコンビネーターを使って処理をしてみて、戻り値が &lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; のようになってしまった場合は、外側のmapをflatMapに変更することで解決できます。&lt;/p&gt;
-&lt;p&gt;このように &lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; を &lt;code class=&quot;language-text&quot;&gt;Option[T]&lt;/code&gt; に変換できる性質を含めた抽象化された概念をモナドと呼びます。つまり、flatMapとはモナドという概念を表していることになります。&lt;/p&gt;
-&lt;h3&gt;for式とflatMapの関係&lt;/h3&gt;
-&lt;p&gt;初心者が誤解しやすいのは、Scalaのfor式をループ処理の指定だと勘違いしていることです。しかし、Scalaのfor式においてはその発想をまず捨ててください。for式の本質はflatMapの書き換えであり、ループ処理ではありません。flatMapの階層が深くなってきた場合には、for式に書き換えることをおすすめします。&lt;/p&gt;
-&lt;p&gt;以下にOption型に対してfor式を適用した具体例を示します。&lt;/p&gt;
+&lt;p&gt;つまり、実質的には Some か None の 2 通りしかありませんので、&lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; を &lt;code class=&quot;language-text&quot;&gt;Option[T]&lt;/code&gt; と平坦化することが望ましいです。この平坦化を実現するには、flatMap コンビネーターを使用することで簡単に実現できます。&lt;/p&gt;
+&lt;p&gt;実務的には、まずは map コンビネーターを使って処理をしてみて、戻り値が &lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; のようになってしまった場合は、外側の map を flatMap に変更することで解決できます。&lt;/p&gt;
+&lt;p&gt;このように &lt;code class=&quot;language-text&quot;&gt;Option[Option[T]]&lt;/code&gt; を &lt;code class=&quot;language-text&quot;&gt;Option[T]&lt;/code&gt; に変換できる性質を含めた抽象化された概念をモナドと呼びます。つまり、flatMap とはモナドという概念を表していることになります。&lt;/p&gt;
+&lt;h3&gt;for 式と flatMap の関係&lt;/h3&gt;
+&lt;p&gt;初心者が誤解しやすいのは、Scala の for 式をループ処理の指定だと勘違いしていることです。しかし、Scala の for 式においてはその発想をまず捨ててください。for 式の本質は flatMap の書き換えであり、ループ処理ではありません。flatMap の階層が深くなってきた場合には、for 式に書き換えることをおすすめします。&lt;/p&gt;
+&lt;p&gt;以下に Option 型に対して for 式を適用した具体例を示します。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;scala&quot;&gt;&lt;pre class=&quot;language-scala&quot;&gt;&lt;code class=&quot;language-scala&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; iOpt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Some&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; jOpt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Some&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;val&lt;/span&gt; kOpt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Some&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -103,5 +103,5 @@
 &lt;span class=&quot;token comment&quot;&gt;// flatMapで平坦化した a と for式で平坦化した b は全く同じ&lt;/span&gt;
 println&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Some(6)&lt;/span&gt;
 println&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Some(6)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;関数シグネチャとしてOption型を使うべきか&lt;/h3&gt;
-&lt;p&gt;関数シグネチャにOption型は存在しない方が望ましいです。つまり、関数への入力値は必ず存在し、関数から返す値も必ず存在することが望ましいということです。ただし、実際にはプログラミングにおいて、一度でもOption型に関わった場合、Option型が付きまとうことがあります。そのため、関数の出力にOption型が存在するのは一般的で、これは意図した例外が発生する可能性があることを示唆しています。一方、関数の入力にOption型が存在する場合は、設計が適切でない可能性が高いです。&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;h3&gt;関数シグネチャとして Option 型を使うべきか&lt;/h3&gt;
+&lt;p&gt;関数シグネチャに Option 型は存在しない方が望ましいです。つまり、関数への入力値は必ず存在し、関数から返す値も必ず存在することが望ましいということです。ただし、実際にはプログラミングにおいて、一度でも Option 型に関わった場合、Option 型が付きまとうことがあります。そのため、関数の出力に Option 型が存在するのは一般的で、これは意図した例外が発生する可能性があることを示唆しています。一方、関数の入力に Option 型が存在する場合は、設計が適切でない可能性が高いです。&lt;/p&gt;</content:encoded></item></channel></rss>
