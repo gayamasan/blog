@@ -35,6 +35,10 @@
 <h3>No.3</h3>
 <p>整数形式を想定した任意の４つの文字列について、総和を算出するメソッドを完成させてください。ただしコレクションの使用は禁止します。</p>
 <div class="gatsby-highlight" data-language="scala"><pre class="language-scala"><code class="language-scala"><span class="token keyword">def</span> sum<span class="token punctuation">(</span>a<span class="token operator">:</span> <span class="token builtin">String</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token builtin">String</span><span class="token punctuation">,</span> c<span class="token operator">:</span> <span class="token builtin">String</span><span class="token punctuation">,</span> d<span class="token operator">:</span> <span class="token builtin">String</span><span class="token punctuation">)</span><span class="token operator">:</span> Option<span class="token punctuation">[</span><span class="token builtin">Int</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">val</span> aOpt <span class="token operator">=</span> a<span class="token punctuation">.</span>toIntOption
+  <span class="token keyword">val</span> bOpt <span class="token operator">=</span> b<span class="token punctuation">.</span>toIntOption
+  <span class="token keyword">val</span> cOpt <span class="token operator">=</span> c<span class="token punctuation">.</span>toIntOption
+  <span class="token keyword">val</span> dOpt <span class="token operator">=</span> d<span class="token punctuation">.</span>toIntOption
   <span class="token operator">?</span><span class="token operator">?</span><span class="token operator">?</span>
 <span class="token punctuation">}</span></code></pre></div>
 <h3>No.4</h3>
@@ -49,7 +53,7 @@
   <span class="token operator">?</span><span class="token operator">?</span><span class="token operator">?</span>
 <span class="token punctuation">}</span></code></pre></div>
 <h3>No.6</h3>
-<p>非同期でドル円とユーロドルのレートを I/O で取得し、その結果をもとにユーロ円のレートを計算するメソッドを完成させてください。なお、ユーロ円のレートとは、1 ユーロを購入するために必要な円の額を表します。具体的には、1 ドルを購入し、そのドルを使って 1 ユーロを購入するためには、何円必要かを計算することになります。今回の例では、1 ドルを購入するのに 123.45 円が必要であり、1 ユーロを購入するのには 1.2345 ドルが必要です。</p>
+<p>非同期でドル円とユーロドルのレートを I/O で取得し、その結果をもとにユーロ円のレートを計算するメソッドを完成させてください。なお、ユーロ円のレートとは、1 ユーロを購入するために必要な円の額を表します。具体的には、ドルを購入し、そのドルを使って 1 ユーロを購入するためには、何円必要かを計算することになります。今回の例では、1 ドルを購入するのに 123.45 円が必要であり、1 ユーロを購入するのには 1.2345 ドルが必要です。</p>
 <div class="gatsby-highlight" data-language="scala"><pre class="language-scala"><code class="language-scala"><span class="token keyword">def</span> calcEurJpyRate<span class="token operator">:</span> Future<span class="token punctuation">[</span>BigDecimal<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
 
   <span class="token keyword">import</span> <span class="token namespace">scala<span class="token punctuation">.</span>concurrent<span class="token punctuation">.</span></span>ExecutionContext<span class="token punctuation">.</span>Implicits<span class="token punctuation">.</span>global
